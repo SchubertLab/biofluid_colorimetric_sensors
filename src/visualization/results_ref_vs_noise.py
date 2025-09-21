@@ -3,16 +3,16 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-ROOT_PATH = '/Users/castelblanco/Documents/PhD-Repos/neonatal_sensors/multiarray_color_sensors/'
+ROOT_PATH = './multiarray_color_sensors/'
 
-model_eval_results_path = ROOT_PATH + 'results/single_var_models/ph/predictions_PH_azure-paper-14_2025_01_21.csv'
+model_eval_results_path = ROOT_PATH + 'results/single_var_models/ph/predictions_1.csv'
 df_results = pd.read_csv(model_eval_results_path)
 target_array = df_results['target_0_1'].to_numpy()
 pred_array = df_results['pred_0_1'].to_numpy()
 pred_array_real = df_results['pred_array_real'].to_numpy()
 target_array_real = df_results['target_array_real'].to_numpy()
 
-noise_eval_results_path = ROOT_PATH + 'results/from_unet_mlp_results/ph/results_ph_fine-universe_2025_03_07.csv'
+noise_eval_results_path = ROOT_PATH + 'results/from_unet_mlp_results/ph/predictions_noise_1.csv'
 df_noise = pd.read_csv(noise_eval_results_path)
 noise_target_array = df_noise['target_0_1'].to_numpy()
 noise_pred_array = df_noise['pred_0_1'].to_numpy()
