@@ -1,7 +1,12 @@
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.17303249-blue)](https://doi.org/10.5281/zenodo.17303249)
+[![DOI](https://img.shields.io/badge/DOI-10.1101/2025.09.21.25336258-blue)](https://doi.org/10.1101/2025.09.21.25336258)
+
 Biofluid Colorimetric Sensors
 ==============================
 
 Read signals from colorimetric sensors even in non-uniform illumination.
+
+Details on Models and Data can be found at https://www.medrxiv.org/content/10.1101/2025.09.21.25336258v1
 
 Project Organization
 ------------
