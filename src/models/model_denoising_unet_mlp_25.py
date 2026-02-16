@@ -134,13 +134,13 @@ class DenoisingUnetMLP(nn.Module):
 
 if __name__ == '__main__':
 
-    TEST_MODEL = False
+    TEST_MODEL = True
 
     if TEST_MODEL:
         INPUT_CHANNELS = 4
         N_VARIABLES_OUT = 4
-        INIT_FILTERS = 32
-        IMAGE_SIZE = 128
+        INIT_FILTERS = 32  # 32, 80
+        IMAGE_SIZE = 128   # 128, 64
 
         net = DenoisingUnetMLP(
             n_in_channels=INPUT_CHANNELS,

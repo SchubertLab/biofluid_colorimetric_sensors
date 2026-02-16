@@ -18,8 +18,8 @@ import src.data.light_kernels as light_kernels
 class DatasetSyntheticSensors(Dataset):
     """
         Dataset class for SyntheticSensors
-        input:
-        output: sensor_distributions  skeletons_dict sensor_mask_per_variable and label_dictionary
+        input: sensor_distributions  skeletons_dict sensor_mask_per_variable and label_dictionary
+        output: dataset pytorch object
     """
 
     def __init__(self, root_path, paths_list_ref_color_dict, path_image_skeletons, label_dictionary,
@@ -384,7 +384,7 @@ class DatasetSyntheticSensors(Dataset):
 
 
 if __name__ == '__main__':
-    TEST_DATA_LOADER = True
+    TEST_DATA_LOADER = False
 
     if TEST_DATA_LOADER:
         # Config
